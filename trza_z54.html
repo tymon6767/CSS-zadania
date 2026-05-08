@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trzaskalski Z54</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 {
+            color: #003366;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #003366;
+            color: white;
+        }
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .comment {
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Kaskadowe Arkusze Stylów</h1>
+    <p class="comment"><!-- Tymon Trzaskalski - Data: 08.05.2026 --></p>
+	<a href="trza_z54.png">Walidacja tekstu</a>
+
+
+    <hr>
+
+    <h2>Zadanie 2: Definicja CSS</h2>
+    <p><strong>CSS</strong> (Cascading Style Sheets) – <strong>Kaskadowe Arkusze Stylów</strong> to specjalny język stworzony w celu elastycznego zarządzania sposobem formatowania (wyglądem) elementów znajdujących się na stronach WWW.</p>
+
+    <h2>Zadanie 3: Cechy modyfikowania formatowania w HTML oraz CSS</h2>
+    
+    <table>
+        <tr>
+            <th>Cecha</th>
+            <th>w HTML</th>
+            <th>w CSS</th>
+        </tr>
+        <tr>
+            <td>Organizacja kodu</td>
+            <td>Bardzo żmudna – atrybuty porozrzucane w kodzie, mieszają się ze strukturą</td>
+            <td>Rozdzielenie struktury i prezentacji – wszystkie style w jednym miejscu</td>
+        </tr>
+    </table>
+
+    <h3>Nowe możliwości CSS:</h3>
+    <ol>
+        <li>Przestarzałe atrybuty HTML są wycofywane na rzecz CSS</li>
+        <li>Bardziej przejrzysty i krótszy kod</li>
+        <li>Łatwe zarządzanie wieloma dokumentami dzięki zewnętrznym arkuszom</li>
+        <li>Użycie klas i selektorów – duża oszczędność kodu</li>
+        <li>Różnorodne jednostki miar i sposoby definiowania kolorów</li>
+        <li>Więcej opcji formatowania tekstu (9 stopni pogrubienia itp.)</li>
+        <li>Efekty graficzne i filtry</li>
+        <li>Zaawansowane formatowanie przy drukowaniu</li>
+    </ol>
+
+    <h3>Wady CSS:</h3>
+    <ol>
+        <li>Złożona specyfikacja, nie toleruje błędów składniowych</li>
+        <li>Brak sygnalizacji błędów</li>
+        <li>Różna obsługa przez różne przeglądarki</li>
+    </ol>
+
+    <h2>Zadanie 4: Sposoby podłączania stylów do strony</h2>
+    
+    <h3>1. Zewnętrzny arkusz stylów (zalecany)</h3>
+    <pre>&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</pre>
+
+    <h3>2. Styl liniowy (inline)</h3>
+    <pre>&lt;p style="color: red; font-size: 20px;"&gt;Tekst&lt;/p&gt;</pre>
+
+    <h3>3. Wewnętrzny arkusz stylów</h3>
+    <pre>&lt;style&gt;
+    p { color: blue; }
+&lt;/style&gt;</pre>
+
+    <h3>4. Import arkusza stylów</h3>
+    <pre>&lt;style&gt;
+    @import url("style.css");
+&lt;/style&gt;</pre>
+
+    <h3>5. Alternatywne arkusze stylów</h3>
+    <pre>&lt;link rel="alternate stylesheet" title="Nazwa" href="styl2.css"&gt;</pre>
+
+    <h2>Kaskadowość stylów i priorytety</h2>
+    <p>Kolejność ważności (od najsilniejszego):</p>
+    <ol>
+        <li><strong>Styl liniowy</strong> (inline)</li>
+        <li><strong>!important</strong></li>
+        <li>Styl wewnętrzny</li>
+        <li>Styl zewnętrzny</li>
+        <li>Import</li>
+        <li>Domyślne style przeglądarki</li>
+    </ol>
+
+    <h2>Jednostki miar</h2>
+    <ul>
+        <li><strong>Bezwzględne:</strong> px, cm, mm, in, pt, pc</li>
+        <li><strong>Względne:</strong> em, rem, %, vw, vh, vmin, vmax</li>
+    </ul>
+
+    <h2>Sposoby określania kolorów</h2>
+    <ul>
+        <li>Nazwa koloru: <code>red</code></li>
+        <li>HEX: <code>#FF0000</code></li>
+        <li>RGB: <code>rgb(255, 0, 0)</code></li>
+        <li>Procentowo: <code>rgb(100%, 0%, 0%)</code></li>
+    </ul>
+
+    <h2>Rodzaje selektorów</h2>
+    <ul>
+        <li>Prosty (np. <code>p</code>, <code>h1</code>)</li>
+        <li>Uniwersalny (<code>*</code>)</li>
+        <li>Potomka (<code>div p</code>)</li>
+        <li>Dziecka (<code>div > p</code>)</li>
+        <li>Klasy (<code>.nazwa</code>)</li>
+        <li>ID (<code>#nazwa</code>)</li>
+        <li>Pseudoklasy i pseudoelementy</li>
+    </ul>
+
+    <hr>
+    <!-- Trzaskalski z54-->
+
+</body>
+</html>
