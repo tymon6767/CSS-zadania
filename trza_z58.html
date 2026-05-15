@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 58 - Trzaskalski</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        h1 {
+            text-align: center;
+            color: #000066;
+        }
+        h2 {
+            color: #000099;
+            margin-top: 30px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 5px;
+            font-family: Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Zadanie 58</h1>
+    <h2>Pseudoklasy w CSS</h2>
+
+    <p><strong>1. Co to są pseudoklasy?</strong><br>
+    Pseudoklasy to specjalne słowa w CSS, które pozwalają formatować elementy w zależności od ich stanu (np. czy link był kliknięty, czy myszka jest nad elementem).
+    </p>
+
+    <p><strong>2. Bardzo ważna rzecz:</strong><br>
+    Między selektorem a pseudoklasą zawsze musi być dwukropek <code>:</code>
+    </p>
+
+    <h2>3. Najważniejsze pseudoklasy</h2>
+    
+    <p><strong>A:link</strong> – link jeszcze nie odwiedzony<br>
+    <strong>A:visited</strong> – link już odwiedzony<br>
+    <strong>A:hover</strong> – kursor myszki jest nad linkiem<br>
+    <strong>A:active</strong> – link jest właśnie klikany<br>
+    <strong>A:focus</strong> – element ma fokus (np. po naciśnięciu Tab)<br>
+    <strong>:first-child</strong> – pierwsze dziecko elementu</p>
+
+    <h2>4. Zastosowanie pseudoklasy :active</h2>
+    <p>
+    • uzupełnienie definicji odnośników<br>
+    • poprawa czytelności formularzy
+    </p>
+
+    <h2>5. Przykłady kodu</h2>
+
+    <p><strong>Przykład 1:</strong></p>
+    <code>
+A:link { color: blue; }<br>
+A:visited { color: purple; }
+    </code>
+
+    <p><strong>Przykład 2:</strong></p>
+    <code>
+A:hover { color: red; text-decoration: underline; }<br>
+A:active { color: darkred; }
+    </code>
+
+    <p><strong>Przykład 3:</strong></p>
+    <code>
+A { color: navy; }<br>
+A:link { color: blue; }<br>
+A:visited { color: purple; }<br>
+A:hover { color: red; }<br>
+A:active { color: darkred; }
+    </code>
+
+    <hr>
+    <p><small>Trzaskalski Zadanie 58 - 15.05.2026</small></p>
+
+</body>
+</html>
