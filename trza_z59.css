@@ -1,0 +1,27 @@
+/* Trzaskalski Zadanie 59 - 15.05.2026 */
+
+A {
+    font-size: 18pt;
+    text-decoration: none; 
+}
+
+A:link {
+    color: blue;
+}
+
+A:visited {
+    color: green;
+}
+
+A:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+A:active {
+    color: brown;
+}
+
+A:focus {
+    color: brown;
+}
