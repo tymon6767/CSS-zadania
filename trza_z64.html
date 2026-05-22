@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Trzaskalski Z64_html</title>
+    <link rel="stylesheet" href="trza_CSS_z64.css">
+</head>
+<body>
+
+    <h1>Zadanie 64</h1>
+    <h2>Zaokrąglanie narożników oraz centrowanie DIV-ów</h2>
+
+    <h3>1. Zaokrąglanie narożników (border-radius)</h3>
+    
+    <table>
+        <tr>
+            <td>Zaokrąglenie górnego-lewego narożnika:</td>
+            <td><code>border-top-left-radius: wartość;</code></td>
+        </tr>
+        <tr>
+            <td>Zaokrąglenie górnego-prawego narożnika:</td>
+            <td><code>border-top-right-radius: wartość;</code></td>
+        </tr>
+        <tr>
+            <td>Zaokrąglenie dolnego-prawego narożnika:</td>
+            <td><code>border-bottom-right-radius: wartość;</code></td>
+        </tr>
+        <tr>
+            <td>Zaokrąglenie dolnego-lewego narożnika:</td>
+            <td><code>border-bottom-left-radius: wartość;</code></td>
+        </tr>
+    </table>
+
+    <h3>2. Zastosowanie i uwagi</h3>
+    <ul>
+        <li>Można używać px, %, em</li>
+        <li>Działa na div, p, h1 i inne bloki</li>
+        <li>Element nie musi mieć ramki – wystarczy tło</li>
+        <li>Tekst nie zawija się automatycznie do zaokrąglenia</li>
+    </ul>
+
+    <h3>Przykład z instrukcji:</h3>
+    <div class="przyklad">
+        border-top-right-radius: 10px;
+    </div>
+
+    <h3>3. Centrowanie DIV-a</h3>
+    <p>Aby wycentrować div w poziomie, wpisujemy w CSS:</p>
+    <div class="centrum">
+        margin-left: auto;<br>
+        margin-right: auto;
+    </div>
+    <p>Trzeba nadać div-owi szerokość (np. 50% lub 400px).</p>
+
+    <!-- Trzaskalski Z64_html -->
+</body>
+</html>
