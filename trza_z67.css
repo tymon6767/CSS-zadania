@@ -1,0 +1,35 @@
+/* Tymon Trzaskalski Z67_css - marzec 2026 */
+
+p {
+    font-size: 18pt;           
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+
+p:first-of-type::first-letter {
+    font-size: 113pt;          
+    color: red;                
+    float: left;
+    margin-right: 10px;
+    line-height: 0.8;
+}
+
+p:first-of-type {
+    color: navy;               
+    font-size: 20pt;           
+}
+
+
+p:last-of-type::first-letter {
+    font-size: 113pt;          
+    color: silver;             
+    float: left;
+    margin-right: 10px;
+    line-height: 0.8;
+}
+
+p:last-of-type {
+    color: teal;               
+    font-size: 24pt;           
+}
