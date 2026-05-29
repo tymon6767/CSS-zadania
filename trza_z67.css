@@ -9,21 +9,21 @@ p {
 
 p:first-of-type::first-letter {
     font-size: 113pt;          
-    color: red;                
+    color: lightgreen;                
     float: left;
     margin-right: 10px;
     line-height: 0.8;
 }
 
 p:first-of-type {
-    color: navy;               
+    color: red;               
     font-size: 20pt;           
 }
 
 
 p:last-of-type::first-letter {
     font-size: 113pt;          
-    color: silver;             
+    color: orange;             
     float: left;
     margin-right: 10px;
     line-height: 0.8;
